@@ -1,42 +1,37 @@
-@import 'tailwindcss';
-
-:root {
-  --background: #2a1a0e;
-  --foreground: #f0e0b0;
-  --card: #3d2510;
-  --card-foreground: #f0e0b0;
-  --primary: #c8860a;
-  --primary-foreground: #1a0e05;
-  --secondary: #2d4a22;
-  --secondary-foreground: #c8f0a0;
-  --muted: #4a2e14;
-  --muted-foreground: #a08050;
-  --border: #6b4422;
-  --radius: 0.625rem;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-card: var(--card);
-  --color-card-foreground: var(--card-foreground);
-  --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-secondary: var(--secondary);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-border: var(--border);
-  --radius-lg: var(--radius);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-sm: calc(var(--radius) - 4px);
-}
-
-@layer base {
-  * {
-    @apply border-border outline-none;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-}
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌾 Farm RPG - نسخه تست</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #2a1a0e;
+            color: #f0e0b0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .container {
+            background: #3d2510;
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid #6b4422;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        h1 { color: #c8860a; font-size: 2.5rem; }
+        p { color: #a08050; font-size: 1.2rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌾 مزرعه‌ی من</h1>
+        <p>✅ گیت‌هاب پیجز به درستی کار می‌کنه!</p>
+        <p>به زودی بازی Farm RPG اینجا قرار می‌گیره...</p>
+    </div>
+</body>
+</html>
